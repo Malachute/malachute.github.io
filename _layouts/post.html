@@ -1,10 +1,9 @@
-
 ---
 layout: default
 ---
-<li class="post">
-  <article>
-  	<h2>{ page.title }}</h2>
-  	{{ content }}
-  </article>
-</li>
+<article class="post">
+	<h2 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+	<div class="entry-content">
+	  {{ content }}
+  </div>
+</article>
