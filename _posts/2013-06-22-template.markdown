@@ -1,0 +1,7 @@
+---
+layout: post
+title: Upcoming template
+---
+Can almost start coding the template for a news website called MashUp. There's still a lot work to be done, but here"s a sneak peek for the moment.
+
+![MashUp Blueprint](http://i.imgur.com/JVpWEoK.jpg)
