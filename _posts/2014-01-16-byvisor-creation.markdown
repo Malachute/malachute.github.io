@@ -22,3 +22,6 @@ Drie stappen die je moet ondernemen voordat je een webshop kan beginnen met Word
 3. [WordPress](http://nl.wordpress.org/) + [WooCommerce](http://www.woothemes.com/woocommerce/) (gratis te downloaden)
 
 Als je alles hebt geregeld krijg je van het hostingbedrijf een email met FTP- en andere login gegevens erin.
+
+Hier eindigt deel 1 (kort, maar de serie gaat nog even door).
+
