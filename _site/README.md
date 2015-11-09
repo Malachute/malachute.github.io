@@ -1,4 +1,4 @@
 malachute.github.io
 ===================
 
-Mark Hagethorn's blog aka homepage
+Jekyll based homepage for http://markhagethorn.nl.
