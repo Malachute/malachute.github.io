@@ -5,9 +5,30 @@ layout: default
 	<time datetime="{{ site.time | date_to_long_string }}" id="top_time">{{ site.time | date_to_long_string }}</time>
 </header>
 
-<article class="post">
-	<h2 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
-	<div class="entry-content">
-	  {{ content }}
-  </div>
-</article>
+{% if page.external-url %}
+		<article class="post external">
+		  <h2 class="entry-title">
+				<a href="{{ page.external-url }}" target="_blank">
+		    	{{ page.title }}
+					<i class="fa fa-external-link"></i>
+		  	</a>
+			</h2>
+		</article>
+	{% else %}
+
+  <article class="post">
+    <h2 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <div class="entry-content">
+      {{ content }}
+    </div>
+  </article>
+{% endif %}
+
+<div id="post-nav" class="clearfix">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">&laquo; Previous post</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}" title="{{page.next.title}}">Next post &raquo;</a>
+  {% endif %}
+</div>
