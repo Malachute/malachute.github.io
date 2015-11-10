@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title></title>
+ <link href="http:///atom.xml" rel="self"/>
+ <link href="http:///"/>
+ <updated>2015-11-09T19:33:01+01:00</updated>
+ <id>http:///</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ 
+  <entry>
+    <title>Free parking for life!</title>
+    <link href="http://www.ronreiter.com/free-parking-for-life"/>
+    <updated>2015-11-10T00:00:00+01:00</updated>
+    <id>http:///2015/11/10/free_parking_for_life</id>
+  </entry>
+ 
+ 
+ 
+ <entry>
+   <title>Chillout music</title>
+   <link href="http:///2013/11/02/chillout/"/>
+   <updated>2013-11-02T00:00:00+01:00</updated>
+   <id>http:///2013/11/02/chillout</id>
+   <content type="html">&lt;p&gt;Highly recommended background music while working.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Z8Y1MalRrDc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/lh4brL7PC2E&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</content>
+ </entry>
+ 
+ 
+
+</feed>
