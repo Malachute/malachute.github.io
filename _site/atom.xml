@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title></title>
- <link href="http:///atom.xml" rel="self"/>
- <link href="http:///"/>
- <updated>2015-11-10T15:57:44+01:00</updated>
- <id>http:///</id>
+ <link href="http://http://markhagethorn.nl//atom.xml" rel="self"/>
+ <link href="http://http://markhagethorn.nl//"/>
+ <updated>2015-11-23T10:13:56+01:00</updated>
+ <id>http://http://markhagethorn.nl//</id>
  <author>
-   <name></name>
-   <email></email>
+   <name>Mark</name>
+   <email>mhagethorn@gmail.com</email>
  </author>
 
  
@@ -17,16 +17,16 @@
     <title>Free parking for life!</title>
     <link href="http://www.ronreiter.com/free-parking-for-life"/>
     <updated>2015-11-10T00:00:00+01:00</updated>
-    <id>http:///2015/11/10/free_parking_for_life</id>
+    <id>http://http://markhagethorn.nl//2015/11/10/free_parking_for_life</id>
   </entry>
  
  
  
  <entry>
    <title>Chillout music</title>
-   <link href="http:///2013/11/02/chillout/"/>
+   <link href="http://http://markhagethorn.nl//2013/11/02/chillout/"/>
    <updated>2013-11-02T00:00:00+01:00</updated>
-   <id>http:///2013/11/02/chillout</id>
+   <id>http://http://markhagethorn.nl//2013/11/02/chillout</id>
    <content type="html">&lt;p&gt;Highly recommended background music while working.&lt;/p&gt;
 
 &lt;p&gt;This is a new paragraph.&lt;/p&gt;
