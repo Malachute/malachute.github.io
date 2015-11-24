@@ -4,13 +4,38 @@
  <title></title>
  <link href="http://http://markhagethorn.nl//atom.xml" rel="self"/>
  <link href="http://http://markhagethorn.nl//"/>
- <updated>2015-11-23T10:13:56+01:00</updated>
+ <updated>2015-11-24T10:16:52+01:00</updated>
  <id>http://http://markhagethorn.nl//</id>
  <author>
    <name>Mark</name>
    <email>mhagethorn@gmail.com</email>
  </author>
 
+ 
+ 
+ <entry>
+   <title>How to create a Safari Pinned Tab</title>
+   <link href="http://http://markhagethorn.nl//2015/11/23/apple_pinned_tab/"/>
+   <updated>2015-11-23T00:00:00+01:00</updated>
+   <id>http://http://markhagethorn.nl//2015/11/23/apple_pinned_tab</id>
+   <content type="html">&lt;p&gt;With the new feature in Safari allows you to drag tabs to the left to create permanent tabs for those websites. This post shows you how to create your own pinned tab SVG image. Start by adding link tag to the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of your site.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&#39;mask-icon&#39; href=&#39;mark.svg&#39; color=&#39;brown&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;​&lt;/code&gt;&lt;code&gt; html
+&amp;lt;a href=&quot;#&quot;&amp;gt;Hello world&amp;lt;/a&amp;gt;
+&lt;/code&gt;​``&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function test() {
+  console.log(&quot;notice the blank line before this function?&quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;more text&lt;/p&gt;
+</content>
+ </entry>
+ 
  
  
   <entry>
