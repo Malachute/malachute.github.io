@@ -4,7 +4,7 @@
  <title></title>
  <link href="http://http://markhagethorn.nl//atom.xml" rel="self"/>
  <link href="http://http://markhagethorn.nl//"/>
- <updated>2015-11-24T10:16:52+01:00</updated>
+ <updated>2015-11-24T10:24:58+01:00</updated>
  <id>http://http://markhagethorn.nl//</id>
  <author>
    <name>Mark</name>
@@ -30,6 +30,11 @@
 &lt;pre&gt;&lt;code&gt;function test() {
   console.log(&quot;notice the blank line before this function?&quot;);
 }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;require &#39;redcarpet&#39;
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;more text&lt;/p&gt;

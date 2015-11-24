@@ -5,7 +5,13 @@ author: Mark
 name: Mark Hagethorn
 email: mhagethorn@gmail.com
 domain: http://markhagethorn.nl/
-highlighter: rouge
-markdown: kramdown
+highlighter: pygments
 kramdown:
   input: GFM
+redcarpet:
+  extensions:
+    - footnotes
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
