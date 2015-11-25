@@ -4,7 +4,7 @@
  <title></title>
  <link href="http://http://markhagethorn.nl//atom.xml" rel="self"/>
  <link href="http://http://markhagethorn.nl//"/>
- <updated>2015-11-24T10:24:58+01:00</updated>
+ <updated>2015-11-25T17:33:49+01:00</updated>
  <id>http://http://markhagethorn.nl//</id>
  <author>
    <name>Mark</name>
@@ -14,30 +14,44 @@
  
  
  <entry>
-   <title>How to create a Safari Pinned Tab</title>
+   <title>How to create a Safari Pinned Tab for your website</title>
    <link href="http://http://markhagethorn.nl//2015/11/23/apple_pinned_tab/"/>
    <updated>2015-11-23T00:00:00+01:00</updated>
    <id>http://http://markhagethorn.nl//2015/11/23/apple_pinned_tab</id>
    <content type="html">&lt;p&gt;With the new feature in Safari allows you to drag tabs to the left to create permanent tabs for those websites. This post shows you how to create your own pinned tab SVG image. Start by adding link tag to the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of your site.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&#39;mask-icon&#39; href=&#39;mark.svg&#39; color=&#39;brown&#39;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;mask-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;website_icon.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;​&lt;/code&gt;&lt;code&gt; html
-&amp;lt;a href=&quot;#&quot;&amp;gt;Hello world&amp;lt;/a&amp;gt;
-&lt;/code&gt;​``&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/u7uqLFg.gif&quot; alt=&quot;safari pinned tab&quot; title=&quot;Safari Pinned Tab&quot; /&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;function test() {
-  console.log(&quot;notice the blank line before this function?&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next hit &lt;code&gt;Shift + Command + G&lt;/code&gt; in the finder and paste in the following URL:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;require &#39;redcarpet&#39;
-markdown = Redcarpet.new(&quot;Hello World!&quot;)
-puts markdown.to_html
-&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;~/Library/Safari/Template Icons&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;more text&lt;/p&gt;
+&lt;p&gt;Keep this open as this is the cache for Safari’s icons. If you think it doesn’t update after you’ve made changes, delete the contents in this folder and restart Safari.&lt;/p&gt;
+
+&lt;p&gt;According to the official documents for &lt;a href=&quot;https://developer.apple.com/library/prerelease/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html#//apple_ref/doc/uid/TP40014305-CH9-SW20&quot;&gt;icons on pinned tabs&lt;/a&gt;, we need an SVG image with a transparent background and 100% black for all vectors. With the color attribute from the “mask-icon” on top we can change th&lt;br /&gt;
+e hover-over color for the icon. There can only be 1 color so choose wisely.&lt;/p&gt;
+
+&lt;p&gt;I used &lt;a href=&quot;http://vectormagic.com/&quot;&gt;http://vectormagic.com/&lt;/a&gt; to turn my favicon into a SVG file. Then you can use apps like Illustrator or Inkscape to trace black lines in the image, which will act as an outline for the hover effect. Most companies won’t have to do this, as their logo’s are usually letters/symbols.&lt;/p&gt;
+
+&lt;p&gt;Below is the result for my tracing lines for the bear.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/lj4fsmV.png&quot; alt=&quot;pinned safari bear comparison&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I adjusted the previously mentioned mask-icon link to the correct color brown as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;mask-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bear.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#654321&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So the end result is that it works immediately as seen in the GIF below. The bear is not really visible, but it should serve as a basis.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/kYluzfo.gif&quot; alt=&quot;pinned safari bear in action&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Clear Safari’s cache if you need to make adjustments.&lt;/p&gt;
+
+&lt;p&gt;Easy method that took me about 1 hour to enrich your user experience even if it’s just for a few people.&lt;/p&gt;
 </content>
  </entry>
  
@@ -59,9 +73,9 @@ puts markdown.to_html
    <id>http://http://markhagethorn.nl//2013/11/02/chillout</id>
    <content type="html">&lt;p&gt;Highly recommended background music while working.&lt;/p&gt;
 
-&lt;p&gt;This is a new paragraph.&lt;/p&gt;
-
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Z8Y1MalRrDc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/lh4brL7PC2E&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </content>

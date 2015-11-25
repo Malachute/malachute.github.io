@@ -4,8 +4,10 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <title>Page not found - Mark Hagethorn</title>
   <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="mask-icon" href="/assets/img/bear.svg" color="#654321">
   <link href="/assets/css/small.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="/assets/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/github-markdown.css" media="screen" rel="stylesheet" type="text/css">
   <link rel="alternate" type="application/atom+xml" title="Mark Hagethorn blog feed" href="/atom.xml" />
   <script src="https://use.typekit.net/mdr6wxb.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -58,30 +60,44 @@
 
 <p>With the new feature in Safari allows you to drag tabs to the left to create permanent tabs for those websites. This post shows you how to create your own pinned tab SVG image. Start by adding link tag to the <code>&lt;head&gt;</code> section of your site.</p>
 
-<pre><code>&lt;link rel='mask-icon' href='mark.svg' color='brown'&gt;
-</code></pre>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;mask-icon&quot;</span> <span class="na">href=</span><span class="s">&quot;website_icon.svg&quot;</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span></code></pre></div>
 
-<p><code>​</code><code> html
-&lt;a href="#"&gt;Hello world&lt;/a&gt;
-</code>​``</p>
+<p><img src="http://i.imgur.com/u7uqLFg.gif" alt="safari pinned tab" title="Safari Pinned Tab" /></p>
 
-<pre><code>function test() {
-  console.log("notice the blank line before this function?");
-}
-</code></pre>
+<p>Next hit <code>Shift + Command + G</code> in the finder and paste in the following URL:</p>
 
-<pre><code class="language-ruby">require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-</code></pre>
+<blockquote>
+  <p>~/Library/Safari/Template Icons</p>
+</blockquote>
 
-<p>more text</p>
+<p>Keep this open as this is the cache for Safari’s icons. If you think it doesn’t update after you’ve made changes, delete the contents in this folder and restart Safari.</p>
+
+<p>According to the official documents for <a href="https://developer.apple.com/library/prerelease/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html#//apple_ref/doc/uid/TP40014305-CH9-SW20">icons on pinned tabs</a>, we need an SVG image with a transparent background and 100% black for all vectors. With the color attribute from the “mask-icon” on top we can change th<br />
+e hover-over color for the icon. There can only be 1 color so choose wisely.</p>
+
+<p>I used <a href="http://vectormagic.com/">http://vectormagic.com/</a> to turn my favicon into a SVG file. Then you can use apps like Illustrator or Inkscape to trace black lines in the image, which will act as an outline for the hover effect. Most companies won’t have to do this, as their logo’s are usually letters/symbols.</p>
+
+<p>Below is the result for my tracing lines for the bear.</p>
+
+<p><img src="http://i.imgur.com/lj4fsmV.png" alt="pinned safari bear comparison" /></p>
+
+<p>Then I adjusted the previously mentioned mask-icon link to the correct color brown as follows:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;mask-icon&quot;</span> <span class="na">href=</span><span class="s">&quot;bear.svg&quot;</span> <span class="na">color=</span><span class="s">&quot;#654321&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>So the end result is that it works immediately as seen in the GIF below. The bear is not really visible, but it should serve as a basis.</p>
+
+<p><img src="http://i.imgur.com/kYluzfo.gif" alt="pinned safari bear in action" /></p>
+
+<p>Clear Safari’s cache if you need to make adjustments.</p>
+
+<p>Easy method that took me about 1 hour to enrich your user experience even if it’s just for a few people.</p>
 
 <p>Highly recommended background music while working.</p>
 
-<p>This is a new paragraph.</p>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z8Y1MalRrDc" frameborder="0" allowfullscreen=""></iframe>
+
+<p><br /></p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lh4brL7PC2E" frameborder="0" allowfullscreen=""></iframe>
 
