@@ -29,53 +29,15 @@ article.external h2 {padding: 20px 0 20px 50px;margin: 0;}
 article h2 a:hover > i {color: #108438;}
 article h2 a:hover {border-bottom: 1px solid #108438;color: #108438;}
 article a:hover {color: #108438}
-#post-nav {
-  clear: both;
-  margin: 0 0 40px 0;
-  max-width: 600px;
-}
-#post-nav .prev {
-  float: left;
-  padding-left: 50px;
-}
-#post-nav .next {
-  float: right;
-}
-.btn-primary {
-  background-image: transparent;
-  background: #139655;
-  background: -moz-linear-gradient(top, #139655 0%, #108438 40%, #398235 100%);
-  background: -webkit-linear-gradient(top, #139655 0%,#108438 40%,#398235 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #139655 0%,#108438 40%,#398235 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139655', endColorstr='#398235',GradientType=0 ); /* IE6-9 */
-  border-color: #005700;
-}
-.btn-primary:active, .btn-primary.active {
-  background-color: #139655;
-  border-color: #005700;
-}
-footer.port p {
-  border-radius: 8px;
-}
-.well .thumbnail img {
-  max-width: 100%;
-}
-.description p {
-  margin: 10px 0px;
-  line-height: 1.5;
-}
-.well .description a {
-  color: white;
-}
-.well .description p > a {
-  color: #333;
-  border-bottom: 2px solid #108438;
-  font-weight: bold;
-}
-.well .description p > a:visited, .well .description p > a:hover {
-  color: #333 !important;
-}
-.funky-link {
-  border-bottom: 2px solid #108438;
-  font-weight: bold;
-}
+#post-nav {clear: both;margin: 0 0 40px 0;max-width: 600px;}
+#post-nav .prev {float: left;padding-left: 50px;}
+#post-nav .next {float: right;}
+.btn-primary {background-image: transparent;background: #139655;background: -moz-linear-gradient(top, #139655 0%, #108438 40%, #398235 100%);background: -webkit-linear-gradient(top, #139655 0%,#108438 40%,#398235 100%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(to bottom, #139655 0%,#108438 40%,#398235 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139655', endColorstr='#398235',GradientType=0 ); /* IE6-9 */border-color: #005700;}
+.btn-primary:active, .btn-primary.active {background-color: #139655;border-color: #005700;}
+footer.port p {border-radius: 8px;}
+.well .thumbnail img {max-width: 100%;}
+.description p {margin: 10px 0px;line-height: 1.5;}
+.well .description a {color: white;}
+.well .description p > a {color: #333;border-bottom: 2px solid #108438;font-weight: bold;}
+.well .description p > a:visited, .well .description p > a:hover {color: #333 !important;}
+.funky-link {border-bottom: 2px solid #108438;font-weight: bold;}
