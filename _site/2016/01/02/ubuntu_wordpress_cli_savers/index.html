@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <title>Free parking for life!</title>
+  <title>Correct file/directory permissions for WordPress on Ubuntu</title>
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="mask-icon" href="/assets/img/bear.svg" color="#654321">
   <link href="/assets/css/small.css" media="screen" rel="stylesheet" type="text/css" />
@@ -61,22 +61,29 @@
 </header>
 
 
-		<article class="post external">
-		  <h2 class="entry-title">
-				<a href="http://www.ronreiter.com/free-parking-for-life" target="_blank">
-		    	Free parking for life!
-					<i class="fa fa-external-link"></i>
-		  	</a>
-			</h2>
-		</article>
-	
+
+  <article class="post">
+    <h2 class="entry-title"><a href="/2016/01/02/ubuntu_wordpress_cli_savers/">Correct file/directory permissions for WordPress on Ubuntu</a></h2>
+    <div class="entry-content">
+      <p>Whenever I’m uploading something through FTP software, the file permissions usually mess up. Three quick commands to clean up the WordPress installation below.</p>
+
+<p>Start by assigning proper file ownership:<br />
+<code>chown www-data:www-data -R *</code></p>
+
+<p>Change all files to 644 access:<br />
+<code>find . -type f -exec chmod 644 {} \;</code></p>
+
+<p>Change all directories to 755 access:<br />
+<code>find . -type d -exec chmod 755 {} \;</code></p>
+
+    </div>
+  </article>
+
 
 <div id="post-nav" class="clearfix">
   
-    <a class="prev" href="/2013/11/02/chillout/" title="Chillout music">&laquo; Previous post</a>
+    <a class="prev" href="/2015/11/23/apple_pinned_tab/" title="How to create a Safari Pinned Tab (SVG) for your website">&laquo; Previous post</a>
   
-  
-    <a class="next" href="/2015/11/23/apple_pinned_tab/" title="How to create a Safari Pinned Tab (SVG) for your website">Next post &raquo;</a>
   
 </div>
 

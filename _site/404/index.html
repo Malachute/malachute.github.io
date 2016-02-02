@@ -58,6 +58,16 @@
 
 <div id="notice"><span>:(</span><br><br>Not found.</div>
 
+<p>Whenever I’m uploading something through FTP software, the file permissions usually mess up. Three quick commands to clean up the WordPress installation below.</p>
+
+<p>Start by assigning proper file ownership:<br />
+<code>chown www-data:www-data -R *</code></p>
+
+<p>Change all files to 644 access:<br />
+<code>find . -type f -exec chmod 644 {} \;</code></p>
+
+<p>Change all directories to 755 access:<br />
+<code>find . -type d -exec chmod 755 {} \;</code></p>
 <p>With the new feature in Safari allows you to drag tabs to the left to create permanent tabs for those websites. This post shows you how to create your own pinned tab SVG image. Start by adding link tag to the <code>&lt;head&gt;</code> section of your site.</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;mask-icon&quot;</span> <span class="na">href=</span><span class="s">&quot;website_icon.svg&quot;</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span></code></pre></div>

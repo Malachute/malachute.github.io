@@ -4,13 +4,33 @@
  <title></title>
  <link href="http://http://markhagethorn.nl//atom.xml" rel="self"/>
  <link href="http://http://markhagethorn.nl//"/>
- <updated>2015-11-26T11:40:25+01:00</updated>
+ <updated>2016-02-02T15:38:22+01:00</updated>
  <id>http://http://markhagethorn.nl//</id>
  <author>
    <name>Mark</name>
    <email>mhagethorn@gmail.com</email>
  </author>
 
+ 
+ 
+ <entry>
+   <title>Correct file/directory permissions for WordPress on Ubuntu</title>
+   <link href="http://http://markhagethorn.nl//2016/01/02/ubuntu_wordpress_cli_savers/"/>
+   <updated>2016-01-02T00:00:00+01:00</updated>
+   <id>http://http://markhagethorn.nl//2016/01/02/ubuntu_wordpress_cli_savers</id>
+   <content type="html">&lt;p&gt;Whenever I’m uploading something through FTP software, the file permissions usually mess up. Three quick commands to clean up the WordPress installation below.&lt;/p&gt;
+
+&lt;p&gt;Start by assigning proper file ownership:&lt;br /&gt;
+&lt;code&gt;chown www-data:www-data -R *&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Change all files to 644 access:&lt;br /&gt;
+&lt;code&gt;find . -type f -exec chmod 644 {} \;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Change all directories to 755 access:&lt;br /&gt;
+&lt;code&gt;find . -type d -exec chmod 755 {} \;&lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
  
  
  <entry>
