@@ -4,7 +4,7 @@
  <title></title>
  <link href="http://http://markhagethorn.nl//atom.xml" rel="self"/>
  <link href="http://http://markhagethorn.nl//"/>
- <updated>2016-02-02T15:38:22+01:00</updated>
+ <updated>2016-02-08T13:52:59+01:00</updated>
  <id>http://http://markhagethorn.nl//</id>
  <author>
    <name>Mark</name>
@@ -20,14 +20,18 @@
    <id>http://http://markhagethorn.nl//2016/01/02/ubuntu_wordpress_cli_savers</id>
    <content type="html">&lt;p&gt;Whenever I’m uploading something through FTP software, the file permissions usually mess up. Three quick commands to clean up the WordPress installation below.&lt;/p&gt;
 
-&lt;p&gt;Start by assigning proper file ownership:&lt;br /&gt;
-&lt;code&gt;chown www-data:www-data -R *&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Start by assigning proper file ownership:&lt;/p&gt;
 
-&lt;p&gt;Change all files to 644 access:&lt;br /&gt;
-&lt;code&gt;find . -type f -exec chmod 644 {} \;&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;chown www-data:www-data -R &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Change all directories to 755 access:&lt;br /&gt;
-&lt;code&gt;find . -type d -exec chmod 755 {} \;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Change all files to 644 access:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find . -type f -exec chmod 644 &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Change all directories to 755 access:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find . -type d -exec chmod 755 &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 </content>
  </entry>
  
@@ -40,7 +44,7 @@
    <id>http://http://markhagethorn.nl//2015/11/23/apple_pinned_tab</id>
    <content type="html">&lt;p&gt;With the new feature in Safari allows you to drag tabs to the left to create permanent tabs for those websites. This post shows you how to create your own pinned tab SVG image. Start by adding link tag to the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of your site.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;mask-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;website_icon.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mask-icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;website_icon.svg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/PxcsQeg.gif&quot; alt=&quot;safari pinned tab&quot; /&gt;&lt;/p&gt;
 
@@ -62,7 +66,7 @@
 
 &lt;p&gt;Then I adjusted the previously mentioned mask-icon link to the correct color #cc0066 and name:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;mask-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;mashnieuws.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#cc0066&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mask-icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mashnieuws.svg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#cc0066&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;So the end result is that it works immediately, as seen in the GIF below. I also created a SVG for my blog, but as it’s an image of a bear, it doesn’t come out so well.&lt;/p&gt;
 

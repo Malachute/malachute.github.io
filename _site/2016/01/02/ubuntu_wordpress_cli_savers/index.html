@@ -28,36 +28,36 @@
 <body class="home blog">
 
 <header id="sidebar">
-<aside id="logo" class="clearfix">
-<div class="clearfix">
-  <a href="/">Mark Hagethorn</a>
-</div>
-</aside>
-<ul id="user_meta">
-<li class="blog_name">
-<h1 id="blog_name">
-  <a href="/">Mark Hagethorn</a>
-</h1>
-</li>
-<li class="tagline">
-<h2 id="tagline">show the way</h2>
-</li>
-<div class="nav-menu">
-  <ul>
-    <li class="page_item"><a href="/">home</a></li>
-    <li class="page_item"><a href="/portfolio/">portfolio</a></li>
-    <li class="page_item"><a href="/atom.xml" target="_blank">feed</a></li>
-    <li class="link email"><a href="mailto:mhagethorn@gmail.com" target="_blank">say hello</a></li>
+  <aside id="logo" class="clearfix">
+    <div class="clearfix">
+      <a href="/">Mark Hagethorn</a>
+    </div>
+  </aside>
+  <ul id="user_meta">
+    <li class="blog_name">
+      <h1 id="blog_name">
+        <a href="/">Mark Hagethorn</a>
+      </h1>
+    </li>
+    <li class="tagline">
+      <h2 id="tagline">$ top</h2>
+    </li>
+    <div class="nav-menu">
+      <ul>
+        <li class="page_item"><a href="/">home</a></li>
+        <li class="page_item"><a href="/portfolio/">portfolio</a></li>
+        <li class="page_item"><a href="/atom.xml" target="_blank">feed</a></li>
+        <li class="link email"><a href="mailto:mhagethorn@gmail.com" target="_blank">say hello</a></li>
+      </ul>
+    </div>
   </ul>
-</div>
-</ul>
 </header>
 
-	<section id="river" role="main">
+<section id="river" role="main">
 
 
-<header id="begin">
-	<time datetime="02 February 2016" id="top_time">Posted on: 02 February 2016</time>
+<header id="begin" class="post_date">
+	<time datetime="08 February 2016" id="top_time">Posted on: 08 February 2016</time>
 </header>
 
 
@@ -67,14 +67,18 @@
     <div class="entry-content">
       <p>Whenever I’m uploading something through FTP software, the file permissions usually mess up. Three quick commands to clean up the WordPress installation below.</p>
 
-<p>Start by assigning proper file ownership:<br />
-<code>chown www-data:www-data -R *</code></p>
+<p>Start by assigning proper file ownership:</p>
 
-<p>Change all files to 644 access:<br />
-<code>find . -type f -exec chmod 644 {} \;</code></p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">chown www-data:www-data -R <span class="k">*</span></code></pre></div>
 
-<p>Change all directories to 755 access:<br />
-<code>find . -type d -exec chmod 755 {} \;</code></p>
+<p>Change all files to 644 access:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">find . -type f -exec chmod 644 <span class="o">{}</span> <span class="se">\;</span></code></pre></div>
+
+<p>Change all directories to 755 access:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">find . -type d -exec chmod 755 <span class="o">{}</span> <span class="se">\;</span></code></pre></div>
+
 
     </div>
   </article>

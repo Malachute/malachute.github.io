@@ -28,49 +28,53 @@
 <body class="home blog">
 
 <header id="sidebar">
-<aside id="logo" class="clearfix">
-<div class="clearfix">
-  <a href="/">Mark Hagethorn</a>
-</div>
-</aside>
-<ul id="user_meta">
-<li class="blog_name">
-<h1 id="blog_name">
-  <a href="/">Mark Hagethorn</a>
-</h1>
-</li>
-<li class="tagline">
-<h2 id="tagline">show the way</h2>
-</li>
-<div class="nav-menu">
-  <ul>
-    <li class="page_item"><a href="/">home</a></li>
-    <li class="page_item"><a href="/portfolio/">portfolio</a></li>
-    <li class="page_item"><a href="/atom.xml" target="_blank">feed</a></li>
-    <li class="link email"><a href="mailto:mhagethorn@gmail.com" target="_blank">say hello</a></li>
+  <aside id="logo" class="clearfix">
+    <div class="clearfix">
+      <a href="/">Mark Hagethorn</a>
+    </div>
+  </aside>
+  <ul id="user_meta">
+    <li class="blog_name">
+      <h1 id="blog_name">
+        <a href="/">Mark Hagethorn</a>
+      </h1>
+    </li>
+    <li class="tagline">
+      <h2 id="tagline">$ top</h2>
+    </li>
+    <div class="nav-menu">
+      <ul>
+        <li class="page_item"><a href="/">home</a></li>
+        <li class="page_item"><a href="/portfolio/">portfolio</a></li>
+        <li class="page_item"><a href="/atom.xml" target="_blank">feed</a></li>
+        <li class="link email"><a href="mailto:mhagethorn@gmail.com" target="_blank">say hello</a></li>
+      </ul>
+    </div>
   </ul>
-</div>
-</ul>
 </header>
 
-	<section id="river" role="main">
+<section id="river" role="main">
 
 
 <div id="notice"><span>:(</span><br><br>Not found.</div>
 
 <p>Whenever I’m uploading something through FTP software, the file permissions usually mess up. Three quick commands to clean up the WordPress installation below.</p>
 
-<p>Start by assigning proper file ownership:<br />
-<code>chown www-data:www-data -R *</code></p>
+<p>Start by assigning proper file ownership:</p>
 
-<p>Change all files to 644 access:<br />
-<code>find . -type f -exec chmod 644 {} \;</code></p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">chown www-data:www-data -R <span class="k">*</span></code></pre></div>
 
-<p>Change all directories to 755 access:<br />
-<code>find . -type d -exec chmod 755 {} \;</code></p>
+<p>Change all files to 644 access:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">find . -type f -exec chmod 644 <span class="o">{}</span> <span class="se">\;</span></code></pre></div>
+
+<p>Change all directories to 755 access:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">find . -type d -exec chmod 755 <span class="o">{}</span> <span class="se">\;</span></code></pre></div>
+
 <p>With the new feature in Safari allows you to drag tabs to the left to create permanent tabs for those websites. This post shows you how to create your own pinned tab SVG image. Start by adding link tag to the <code>&lt;head&gt;</code> section of your site.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;mask-icon&quot;</span> <span class="na">href=</span><span class="s">&quot;website_icon.svg&quot;</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"mask-icon"</span> <span class="na">href=</span><span class="s">"website_icon.svg"</span> <span class="na">color=</span><span class="s">"red"</span><span class="nt">&gt;</span></code></pre></div>
 
 <p><img src="http://i.imgur.com/PxcsQeg.gif" alt="safari pinned tab" /></p>
 
@@ -92,7 +96,7 @@
 
 <p>Then I adjusted the previously mentioned mask-icon link to the correct color #cc0066 and name:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;mask-icon&quot;</span> <span class="na">href=</span><span class="s">&quot;mashnieuws.svg&quot;</span> <span class="na">color=</span><span class="s">&quot;#cc0066&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"mask-icon"</span> <span class="na">href=</span><span class="s">"mashnieuws.svg"</span> <span class="na">color=</span><span class="s">"#cc0066"</span><span class="nt">&gt;</span></code></pre></div>
 
 <p>So the end result is that it works immediately, as seen in the GIF below. I also created a SVG for my blog, but as it’s an image of a bear, it doesn’t come out so well.</p>
 

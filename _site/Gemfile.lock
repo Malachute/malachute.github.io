@@ -168,6 +168,7 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     redcarpet (3.3.2)
+    rouge (1.10.1)
     safe_yaml (1.0.4)
     sass (3.4.19)
     sprockets (2.2.3)
@@ -195,6 +196,7 @@ DEPENDENCIES
   github-pages
   jekyll-compose
   rails (= 3.2.12)
+  rouge
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
