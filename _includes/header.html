@@ -1,56 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <title>{{ page.title }}</title>
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="mask-icon" href="/assets/img/bear.svg" color="#654321">
-  <link href="/assets/css/small.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/assets/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/assets/css/github-markdown.css" media="screen" rel="stylesheet" type="text/css">
-  <link rel="alternate" type="application/atom+xml" title="Mark Hagethorn blog feed" href="/atom.xml" />
-  <script src="https://use.typekit.net/mdr6wxb.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<header class="site-header">
+  <a href="{{ site.baseurl }}/" class="logo"><span class="logo">Hello</span></a>
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-5411119-50']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</head>
-
-<body class="home blog">
-
-<header id="sidebar">
-  <aside id="logo" class="clearfix">
-    <div class="clearfix">
-      <a href="/">Mark Hagethorn</a>
-    </div>
-  </aside>
-  <ul id="user_meta">
-    <li class="blog_name">
-      <h1 id="blog_name">
-        <a href="/">Mark Hagethorn</a>
-      </h1>
-    </li>
-    <li class="tagline">
-      <h2 id="tagline">$ top</h2>
-    </li>
-    <div class="nav-menu">
-      <ul>
-        <li class="page_item"><a href="/">home</a></li>
-        <li class="page_item"><a href="/portfolio/">portfolio</a></li>
-        <li class="page_item"><a href="/atom.xml" target="_blank">feed</a></li>
-        <li class="link email"><a href="mailto:mhagethorn@gmail.com" target="_blank">say hello</a></li>
-      </ul>
-    </div>
-  </ul>
+  <div class="page-links">
+    <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+      • <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </header>
-
-<section id="river" role="main">

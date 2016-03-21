@@ -1,34 +1,62 @@
 ---
 layout: default
 ---
-<header id="begin" class="post_date">
-	<time datetime="{{ site.time | date_to_long_string }}" id="top_time">Posted on: {{ site.time | date_to_long_string }}</time>
-</header>
-
-{% if page.external-url %}
-		<article class="post external">
-		  <h2 class="entry-title">
-				<a href="{{ page.external-url }}" target="_blank">
-		    	{{ page.title }}
-					<i class="fa fa-external-link"></i>
-		  	</a>
-			</h2>
-		</article>
-	{% else %}
-
+<main class="content" role="main">
   <article class="post">
-    <h2 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
-    <div class="entry-content">
+    {% if page.external-url %}
+    <div class="post-meta external">
+      <h1 class="post-title">
+        <a href="{{ page.external-url }}">{{ page.title }} &ogt;</a>
+      </h1>
+    </div>
+    {% else %}
+    <div class="post-meta external">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+    {% endif %}
+    <section class="post-content">
+      <a name="topofpage"></a>
       {{ content }}
+    </section>
+    <footer class="post-footer">
+      <section class="share">
+        <a class="icon" target="_blank" href="http://twitter.com/share?text={{page.title | cgi_escape}}&amp;url={{site.url}}{{page.id}}" target="_blank">
+          Share on
+          {% include icon-twitter.html %}
+        </a>
+      </section>
+    </footer>
+    <div class="bottom-teaser cf">
+      <div class="isLeft">
+        <h5 class="index-headline featured"><span>Written by</span></h5>
+        <section class="author">
+          <div class="author-image"></div>
+          <h4>{{ site.name }}</h4>
+          <hr>
+          <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
+        </section>
+      </div>
+      {{/post}}
+      <div class="isRight">
+        <h5 class="index-headline featured"><span>Supported by</span></h5>
+        <footer class="site-footer">
+          <section class="poweredby">
+            Published with <a href="http://jekyllrb.com"> Jekyll</a>
+            <br />
+            <span class="google-amp">Google AMP
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 511.302 511.302" xml:space="preserve">
+                <g><g>
+              	   <polygon points="126.455,298.54 203.417,298.54 175.323,511.302 384.847,200.43 313.537,200.43 344.242,0" fill="#57ad68"/>
+                </g></g>
+                <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                <g></g>
+              </svg>
+              ready
+            </span>
+          </section>
+          <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip">&star; RSS feed</span></a>
+        </footer>
+      </div>
     </div>
   </article>
-{% endif %}
-
-<div id="post-nav" class="clearfix">
-  {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">&laquo; Previous post</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}" title="{{page.next.title}}">Next post &raquo;</a>
-  {% endif %}
-</div>
+</main>

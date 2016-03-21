@@ -1,31 +1,52 @@
 ---
-title: Mark Hagethorn
 layout: default
 ---
-<header id="begin">
-	<h2>Blog</h2>
-</header>
 
-{% for post in site.posts %}
+<main class="content" role="main">
 
-	{% if post.external-url %}
-		<article class="post external">
-			<h3 class="post_date">{{ post.date | date_to_long_string }}</h3>
-		  <h2 class="entry-title">
-				<a href="{{ post.external-url }}" target="_blank">
-		    	{{ post.title }}
-					<i class="fa fa-external-link"></i>
-		  	</a>
-			</h2>
-		</article>
-	{% else %}
+  <header class="blog-header">
+      <h1 class="blog-title">{{ site.title }}</h1>
+      <h2 class="blog-description">{{ site.description }}</h2>
+  </header>
 
-  <article class="post">
-		<h3 class="post_date">{{ post.date | date_to_long_string }}</h3>
-    <h2 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <div class="entry-content">
-      {{ post.content }}
-    </div>
-  </article>
-{% endif %}
-{% endfor %}
+  <div class="cf frame">
+    {% for post in paginator.posts %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+          {% if page.external-url %}
+          <header class="post-header external">
+            <h2 class="post-title" itemprop="name"><a href="{{ page.external-url }}" itemprop="url">{{ post.title }} &ogt;</a></h2>
+          </header>
+          {% else %}
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          {% endif %}
+          <section class="post-excerpt" itemprop="description">
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <nav class="pagination" role="navigation">
+    {% if paginator.next_page %}
+      <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="older-posts" href="/">Newer posts &rarr;</a>
+      {% else %}
+        <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+      {% endif %}
+    {% endif %}
+  </nav>
+
+</main>
+
+{% include footer.html %}

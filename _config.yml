@@ -1,17 +1,25 @@
-permalink: pretty
-description: Clicky clicky :D
-url: http://markhagethorn.nl/
-author: Mark
-name: Mark Hagethorn
+# Site settings
+title: Hagethorn
 email: mhagethorn@gmail.com
-domain: http://markhagethorn.nl/
-highlighter: rouge
+description: >
+  $ top
+logo: "/assets/images/logo.jpg"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://markhagethorn.com" # the base hostname & protocol for your site
+paginate:	5 # The number of posts to show per page on your homepage
+
+name: 'Mark Hagethorn'
+bio: >
+  $ top
+author_image: "assets/images/bear.png"
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
+
 kramdown:
-  input: GFM
-redcarpet:
-  extensions:
-    - footnotes
-    - hard_wrap
-    - no_intra_emphasis
-    - autolink
-    - strikethrough
+  parse_block_html: true
+
+gems:
+  - jekyll-paginate
