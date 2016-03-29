@@ -185,7 +185,7 @@ body {
       font-weight: 700;
       font-style: normal;
       display: block;
-      font-size: 36px;
+      font-size: 2em;
       line-height: 1.15;
       margin: 0 0;
       a {
@@ -541,7 +541,9 @@ body {
     color: #333333;
   }
 }
-
+a:active {
+  text-decoration: underline;
+}
 
 pre,
 code {
@@ -563,5 +565,56 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+  }
+}
+.well {
+  background: #F6F6F6;
+  padding: 12px 12px;
+  margin-top: 20px;
+  border-radius: 6px;
+  clear: both;
+  overflow: hidden;
+  .description {
+    width: calc(70% - 14px);
+    float: right;
+    @media (max-width: 400px) {
+      width: 100%;
+      float: none;
+    }
+    h2 {
+      padding: 0;
+      margin: 0;
+      font-size: 22px;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    a {
+      &.btn {
+        padding: 10px;
+        display: inline-block;
+        background: $green-color;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: Arial;
+        margin-top: 10px;
+        border-radius: 4px;
+      }
+    }
+  }
+  .thumbnail {
+    width: 30%;
+    float: left;
+    margin-right: 14px;
+    @media (max-width: 400px) {
+      width: 100%;
+      float: none;
+      margin-bottom: 6px;
+    }
+    img {
+      max-width: 100%;
+    }
   }
 }
