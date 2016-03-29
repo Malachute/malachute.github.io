@@ -1,8 +1,7 @@
 # Site settings
 title: Hagethorn
 email: mhagethorn@gmail.com
-description: >
-  $ top
+description: $ top
 logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://markhagethorn.com" # the base hostname & protocol for your site

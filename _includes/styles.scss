@@ -5,17 +5,23 @@ $grey-color: #828282;
 $green-color: #57ad68;
 
 .icon {
-
     > svg {
         display: inline-block;
         width: 16px;
         height: 16px;
         vertical-align: middle;
-
         path {
             fill: $grey-color;
         }
     }
+}
+.top {
+  text-align: center;
+  padding: 20px 0 0;
+  a {
+    color: #bbbbbb;
+    text-decoration: none;
+  }
 }
 
 amp-img {
@@ -73,7 +79,6 @@ body {
   @include respond-to(800) {
     padding: 0 $rs * 1;
   }
-
   .page-links {
       display: block;
       position: absolute;
@@ -92,7 +97,6 @@ body {
         }
       }
   }
-
 }
 
 .blog-header {
@@ -200,6 +204,7 @@ body {
   a {
     color: #999999;
     text-decoration: none;
+    padding: 0 20px;
     &:hover {
       color: #333333;
     }

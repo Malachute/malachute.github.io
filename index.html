@@ -16,9 +16,9 @@ layout: default
           <div class="post-meta">
             <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
           </div>
-          {% if page.external-url %}
+          {% if post.external-url %}
           <header class="post-header external">
-            <h2 class="post-title" itemprop="name"><a href="{{ page.external-url }}" itemprop="url">{{ post.title }} &ogt;</a></h2>
+            <h2 class="post-title" itemprop="name"><a href="{{ post.external-url }}" itemprop="url">{{ post.title }} &ogt;</a></h2>
           </header>
           {% else %}
           <header class="post-header">
