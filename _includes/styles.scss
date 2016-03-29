@@ -39,6 +39,49 @@ $font-sans: "Helvetica Neue", Arial, Helvetica, sans-serif;
   }
 }
 
+.logo {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: transparent;
+  border: 3px solid $green-color;
+  border-radius: 100%;
+  margin: 0;
+  transition-property: all;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -ms-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -webkit-font-smoothing: antialiased;
+  a {
+    display: block;
+    color: $green-color;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: $green-color;
+    border: 0;
+    border-radius: 100%;
+    margin: 5px auto 0 auto;
+    text-indent: 66px;
+    background-size: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    -moz-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    -ms-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    -o-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    -webkit-font-smoothing: antialiased;
+    background-image: url({{ site.baseurl }}/assets/images/bear.png);
+  }
+}
+
 // Only needed for syntax highlighting
 %vertical-rhythm {
   margin-bottom: $rs;
@@ -71,22 +114,26 @@ body {
     padding: 0 $rs * 1;
   }
   .page-links {
-      display: block;
-      position: absolute;
-      top: 10px;
-      right: $rs;
-      font-weight: 200;
-      font-style: normal;
-      font-size: 18px;
-      line-height: 30px;
-
-      a {
-        text-decoration: none;
-        color: #999999;
-        &:hover {
-          color: #333333;
-        }
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: $rs;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    @media (max-width: 350px) {
+      position: relative;
+      left: 75px;
+      right: auto;
+    }
+    a {
+      text-decoration: none;
+      color: #999999;
+      &:hover {
+        color: #333333;
       }
+    }
   }
 }
 
