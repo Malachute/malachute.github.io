@@ -30,7 +30,7 @@ amp-img {
 
 $rs: 16px;
 
-$font-serif: Georgia,Cambria,"Times New Roman",Times, serif;
+$font-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 @mixin respond-to($breakpoint) {
@@ -149,6 +149,7 @@ body {
     margin-bottom: 8px;
     font-size: 50px;
     font-weight: 700;
+    letter-spacing: -2px;
     outline: 0;
     line-height: 50px;
     word-break: break-word;
@@ -170,7 +171,7 @@ body {
   margin: 25px auto 0 auto;
   @include box-sizing(border-box);
   @include respond-to(800) {
-    padding: 0 $rs * 1;
+    padding: 0 $rs * 0.5;
   }
 
   article {
@@ -180,6 +181,7 @@ body {
       border-bottom: 0px;
     }
     .post-title {
+      letter-spacing: -0.02em;
       font-weight: 700;
       font-style: normal;
       display: block;
@@ -195,6 +197,7 @@ body {
       }
     }
     .post-excerpt {
+      letter-spacing: -0.02em;
       font-weight: 300;
       font-style: normal;
       font-size: 20px;
@@ -228,6 +231,7 @@ body {
     color: #b3b3b1;
     font-size: $rs / 8 * 5;
     text-transform: uppercase;
+    letter-spacing: 1px;
   }
 }
 
@@ -270,6 +274,7 @@ body {
   .post-title {
     font-weight: 700;
     font-style: normal;
+    letter-spacing: -0.04em;
     font-size: 50px;
     line-height: 1.1;
     color: #333332;
@@ -290,6 +295,7 @@ body {
   }
   .post-meta-text {
     color: #b3b3b1;
+    letter-spacing: -0.02em;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -298,7 +304,6 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-
   .post-content {
     width: 100%;
     font-family: $font-serif;
@@ -307,6 +312,7 @@ body {
       font-family: $font-sans;
     }
     h3, h4, h5, h6 {
+      letter-spacing: -0.02em;
       font-weight: 700;
       font-style: normal;
       font-size: 24px;
@@ -319,6 +325,7 @@ body {
       font-size: 36px;
     }
     h2, h1 {
+      letter-spacing: -0.02em;
       font-weight: 700;
       font-style: normal;
       font-size: 42px;
@@ -331,6 +338,7 @@ body {
       font-style: normal;
       font-size: 22px;
       line-height: 1.59;
+      letter-spacing: -.002em;
       margin-top: 30px;
       margin-bottom: 0;
       color: #333333;
@@ -338,12 +346,22 @@ body {
       -moz-hyphens: auto;
       hyphens: auto;
     }
+    .image__byline-span {
+      font-size: smaller;
+      color: #bbbbbb;
+      text-align: center;
+      display: block;
+      letter-spacing: -0.5px;
+    }
+    .image__byline-link {
+    }
     a {
       color: #333333;
       text-decoration: underline;
     }
     amp-img, amp-youtube {
       margin-top: 30px;
+      max-width: 100%;
     }
     figure {
       margin: 0;
@@ -373,6 +391,7 @@ body {
       border-left: 3px solid #57ad68;
       padding-left: 20px;
       p {
+        letter-spacing: 0.01rem;
         font-weight: 400;
         color: #888;
         padding-bottom: 3px;
