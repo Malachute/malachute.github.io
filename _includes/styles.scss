@@ -584,11 +584,11 @@ pre {
   clear: both;
   overflow: hidden;
   .description {
-    width: calc(70% - 14px);
-    float: right;
+    width: calc(70% - 20px);
+    display: inline-block;
+    vertical-align: middle;
     @media (max-width: 400px) {
       width: 100%;
-      float: none;
     }
     h2 {
       padding: 0;
@@ -615,11 +615,12 @@ pre {
   }
   .thumbnail {
     width: 30%;
-    float: left;
     margin-right: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     @media (max-width: 400px) {
       width: 100%;
-      float: none;
       margin-bottom: 6px;
     }
     img {
