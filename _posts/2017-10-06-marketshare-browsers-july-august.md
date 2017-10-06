@@ -3,7 +3,7 @@ layout: post
 title: Marketshare Browsers for July and August
 ---
 
-While working at Ticketcounter I decided to do another checkup on the browser marketshare across devices. These stats are for July and August 2017 combined:
+While working at Ticketcounter I decided to do another checkup on the browser marketshare across devices. These stats are for July and August 2017 from an anonymous webshop combined:
 
 <amp-img width="724" height="421" sizes="100vw" src="https://i.imgur.com/Chp4zAU.png" alt="Marketshare by browser"></amp-img>
 <span class="image__byline-span">Marketshare by browser for July & August 2017- <a href="https://i.imgur.com/Chp4zAU.png" class="image__byline-link">view full screen</a></span>
