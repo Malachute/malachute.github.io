@@ -20,8 +20,15 @@ layout: default
             <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
           </header>
           {% endif %}
-          <section class="post-excerpt" itemprop="description">
-            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          <section class="post-content post-excerpt" itemprop="description">
+            {% if post.image %}
+              <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+                <amp-img width="{{ post.image-width }}" height="{{ post.image-height }}" sizes="{{ post.image-sizes }}" src="{{ post.image }}" alt="{{ post.image-alt }}"></amp-img>
+              </a>
+            {% endif %}
+            {% if post.excerpt %}
+              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+            {% post.excerpt %}
           </section>
         </div>
       </article>

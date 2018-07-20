@@ -3,14 +3,41 @@
   <channel>
     <title>Hagethorn</title>
     <description>$ top</description>
-    <link>http://markhagethorn.com/</link>
-    <atom:link href="http://markhagethorn.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Oct 2017 15:06:02 +0200</pubDate>
-    <lastBuildDate>Fri, 06 Oct 2017 15:06:02 +0200</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 20 Jul 2018 10:56:51 +0200</pubDate>
+    <lastBuildDate>Fri, 20 Jul 2018 10:56:51 +0200</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
     
       <item>
-        <title>Marketshare Browsers for July and August</title>
+        <title>Customizing console log output</title>
+        <description>&lt;amp-img width=&quot;2170&quot; height=&quot;664&quot; sizes=&quot;100vw&quot; src=&quot;https://i.imgur.com/4rZrd18.png&quot; alt=&quot;console.log text customization&quot;&gt;&lt;/amp-img&gt;
+
+&lt;p&gt;Open console and copy and paste the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'%c ♥ %cweb %cor %cmobile%c? --&amp;gt; %c'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'background: #ddd; color: red; font-weight: bold; font-size: x-large;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'background: #ddd; color: #f36f21; font-weight: bold; font-size: x-large;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'background: #ddd; color: #000; font-weight: bold; font-size: x-large;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'background: #ddd; color: #f36f21; font-weight: bold; font-size: x-large;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'background: #ddd; color: #000; font-weight: bold; font-size: x-large;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'background: #ddd; color: red; font-weight: bold; font-size: x-large;'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Or make rainbow text with the &lt;a href=&quot;https://stackoverflow.com/questions/7505623/colors-in-javascript-console/21457293#21457293&quot;&gt;example from StackOverflow&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Jul 2018 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2018/07/20/customizing-console-log-output.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/20/customizing-console-log-output.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Marketshare Browsers for July and August 2017</title>
         <description>&lt;p&gt;While working at Ticketcounter I decided to do another checkup on the browser marketshare across devices. These stats are for July and August 2017 from an anonymous webshop combined:&lt;/p&gt;
 
 &lt;amp-img width=&quot;724&quot; height=&quot;421&quot; sizes=&quot;100vw&quot; src=&quot;https://i.imgur.com/Chp4zAU.png&quot; alt=&quot;Marketshare by browser&quot;&gt;&lt;/amp-img&gt;
@@ -26,8 +53,8 @@
 &lt;p&gt;&lt;span class=&quot;image__byline-span&quot;&gt;Marketshare of desktop vs mobile for July &amp;amp; August 2017 - &lt;a href=&quot;https://i.imgur.com/aiu2MER.png&quot; class=&quot;image__byline-link-link&quot;&gt;view full screen&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Oct 2017 00:00:00 +0200</pubDate>
-        <link>http://markhagethorn.com/2017/10/06/marketshare-browsers-july-august.html</link>
-        <guid isPermaLink="true">http://markhagethorn.com/2017/10/06/marketshare-browsers-july-august.html</guid>
+        <link>http://localhost:4000/2017/10/06/marketshare-browsers-july-august.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/06/marketshare-browsers-july-august.html</guid>
         
         
       </item>
@@ -37,8 +64,8 @@
         <description>
 </description>
         <pubDate>Tue, 29 Mar 2016 00:00:00 +0200</pubDate>
-        <link>http://markhagethorn.com/2016/03/29/Opera-Mini-Users-Matter.html</link>
-        <guid isPermaLink="true">http://markhagethorn.com/2016/03/29/Opera-Mini-Users-Matter.html</guid>
+        <link>http://localhost:4000/2016/03/29/Opera-Mini-Users-Matter.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/03/29/Opera-Mini-Users-Matter.html</guid>
         
         
       </item>
@@ -50,8 +77,8 @@
 &lt;p&gt;Theme is based on Medium’s website and the jekyll version taken from this &lt;a href=&quot;https://github.com/ageitgey/amplify&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Mar 2016 00:00:00 +0100</pubDate>
-        <link>http://markhagethorn.com/2016/03/17/Google-AMP-Project.html</link>
-        <guid isPermaLink="true">http://markhagethorn.com/2016/03/17/Google-AMP-Project.html</guid>
+        <link>http://localhost:4000/2016/03/17/Google-AMP-Project.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/03/17/Google-AMP-Project.html</guid>
         
         
       </item>
@@ -73,8 +100,8 @@
 &lt;p&gt;Mainly content marketing for most…&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Mar 2016 00:00:00 +0100</pubDate>
-        <link>http://markhagethorn.com/2016/03/10/RIP_PageRank_Scores.html</link>
-        <guid isPermaLink="true">http://markhagethorn.com/2016/03/10/RIP_PageRank_Scores.html</guid>
+        <link>http://localhost:4000/2016/03/10/RIP_PageRank_Scores.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/03/10/RIP_PageRank_Scores.html</guid>
         
         
       </item>
@@ -86,25 +113,25 @@
 &lt;p&gt;Start by assigning proper file ownership:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;chown www-data:www-data -R &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;chown &lt;/span&gt;www-data:www-data &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Change all files to 644 access:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find . -type f -exec chmod 644 &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; f &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;644 &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Change all directories to 755 access:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find . -type d -exec chmod 755 &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; d &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;755 &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/figure&gt;
 
 </description>
         <pubDate>Sat, 02 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://markhagethorn.com/2016/01/02/ubuntu_wordpress_cli_savers.html</link>
-        <guid isPermaLink="true">http://markhagethorn.com/2016/01/02/ubuntu_wordpress_cli_savers.html</guid>
+        <link>http://localhost:4000/2016/01/02/ubuntu_wordpress_cli_savers.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/01/02/ubuntu_wordpress_cli_savers.html</guid>
         
         
       </item>
@@ -150,8 +177,8 @@
 &lt;p&gt;Easy method that only takes about half an hour and it will further enrich your user experience, even if it’s just for a few people.&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 Nov 2015 00:00:00 +0100</pubDate>
-        <link>http://markhagethorn.com/2015/11/23/apple_pinned_tab.html</link>
-        <guid isPermaLink="true">http://markhagethorn.com/2015/11/23/apple_pinned_tab.html</guid>
+        <link>http://localhost:4000/2015/11/23/apple_pinned_tab.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/11/23/apple_pinned_tab.html</guid>
         
         
       </item>
@@ -161,8 +188,8 @@
         <description>
 </description>
         <pubDate>Tue, 10 Nov 2015 00:00:00 +0100</pubDate>
-        <link>http://markhagethorn.com/2015/11/10/free_parking_for_life.html</link>
-        <guid isPermaLink="true">http://markhagethorn.com/2015/11/10/free_parking_for_life.html</guid>
+        <link>http://localhost:4000/2015/11/10/free_parking_for_life.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/11/10/free_parking_for_life.html</guid>
         
         
       </item>
@@ -180,8 +207,8 @@
 &lt;/amp-youtube&gt;
 </description>
         <pubDate>Sat, 02 Nov 2013 00:00:00 +0100</pubDate>
-        <link>http://markhagethorn.com/2013/11/02/chillout.html</link>
-        <guid isPermaLink="true">http://markhagethorn.com/2013/11/02/chillout.html</guid>
+        <link>http://localhost:4000/2013/11/02/chillout.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2013/11/02/chillout.html</guid>
         
         
       </item>

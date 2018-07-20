@@ -1,0 +1,39 @@
+current directory: /Users/mark/Projects/malachute.github.io/vendor/bundle/ruby/2.3.0/gems/hitimes-1.2.2/ext/hitimes/c
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180720-28310-2y88xa.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mark/Projects/malachute.github.io/vendor/bundle/ruby/2.3.0/gems/hitimes-1.2.2/ext/hitimes/c
+make "DESTDIR=" clean
+
+current directory: /Users/mark/Projects/malachute.github.io/vendor/bundle/ruby/2.3.0/gems/hitimes-1.2.2/ext/hitimes/c
+make "DESTDIR="
+compiling hitimes.c
+compiling hitimes_instant_clock_gettime.c
+compiling hitimes_instant_osx.c
+compiling hitimes_instant_windows.c
+compiling hitimes_interval.c
+compiling hitimes_stats.c
+linking shared-object hitimes/2.3/hitimes.bundle
+ld: warning: directory not found for option '-L/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.Internal.sdk/usr/local/libressl/lib'
+ld: warning: directory not found for option '-L/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.Internal.sdk/usr/local/lib'
+ld: warning: text-based stub file /System/Library/Frameworks//CoreServices.framework/CoreServices.tbd and library file /System/Library/Frameworks//CoreServices.framework/CoreServices are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/libruby.2.3.0.tbd and library file /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/libruby.2.3.0.dylib are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks//CFNetwork.framework/Versions/A/CFNetwork.tbd and library file /System/Library/Frameworks//CFNetwork.framework/Versions/A/CFNetwork are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices.tbd and library file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks//CoreFoundation.framework/Versions/A/CoreFoundation.tbd and library file /System/Library/Frameworks//CoreFoundation.framework/Versions/A/CoreFoundation are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices.tbd and library file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList.tbd and library file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList are out of sync. Falling back to library file for linking.
+ld: warning: directory not found for option '-L/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.Internal.sdk/usr/local/libressl/lib'
+ld: warning: directory not found for option '-L/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.Internal.sdk/usr/local/lib'
+ld: warning: text-based stub file /System/Library/Frameworks//CoreServices.framework/CoreServices.tbd and library file /System/Library/Frameworks//CoreServices.framework/CoreServices are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/libruby.2.3.0.tbd and library file /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/libruby.2.3.0.dylib are out of sync. Falling back to library file for linking.
+ld: warning: The i386 architecture is deprecated for macOS (remove from Xcode build setting: ARCHS)
+ld: warning: text-based stub file /System/Library/Frameworks//CFNetwork.framework/Versions/A/CFNetwork.tbd and library file /System/Library/Frameworks//CFNetwork.framework/Versions/A/CFNetwork are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices.tbd and library file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks//CoreFoundation.framework/Versions/A/CoreFoundation.tbd and library file /System/Library/Frameworks//CoreFoundation.framework/Versions/A/CoreFoundation are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices.tbd and library file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices are out of sync. Falling back to library file for linking.
+ld: warning: text-based stub file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList.tbd and library file /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList are out of sync. Falling back to library file for linking.
+
+current directory: /Users/mark/Projects/malachute.github.io/vendor/bundle/ruby/2.3.0/gems/hitimes-1.2.2/ext/hitimes/c
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hitimes.bundle ./.gem.20180720-28310-31b39e/hitimes/2.3
