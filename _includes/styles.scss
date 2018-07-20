@@ -120,7 +120,7 @@ body {
     right: $rs;
     font-weight: 200;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     @media (max-width: 350px) {
       position: relative;
@@ -200,7 +200,7 @@ body {
       letter-spacing: -0.02em;
       font-weight: 300;
       font-style: normal;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.59;
       color: #666665;
     }
@@ -336,7 +336,7 @@ body {
     p {
       font-weight: 400;
       font-style: normal;
-      font-size: 22px;
+      font-size: $rs;
       line-height: 1.59;
       letter-spacing: -.002em;
       margin-top: 30px;
