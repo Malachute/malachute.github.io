@@ -22,8 +22,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://localhost:4000/page2/",
   "headline": "Hagethorn",
-  "datePublished": "2018-07-20T12:40:58+02:00",
-  "dateModified": "2018-07-20T12:40:58+02:00",
+  "datePublished": "2018-07-20T12:43:00+02:00",
+  "dateModified": "2018-07-20T12:43:00+02:00",
   "description": "$ top",
   "author": {
     "@type": "Person",
@@ -745,13 +745,34 @@ pre {
             <h2 class="post-title" itemprop="name"><a href="/2016/01/02/ubuntu_wordpress_cli_savers.html" itemprop="url">Correct file/directory permissions for WordPress on Ubuntu</a></h2>
           </header>
           
-          <!-- <section class="post-content post-excerpt" itemprop="description">
-            
+          <section class="post-content post-excerpt" itemprop="description">
+            <p>Whenever I’m uploading something through FTP software, the file permissions usually mess up. Three quick commands to clean up the WordPress installation below.</p>
+
+<p>Start by assigning proper file ownership:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">chown </span>www-data:www-data <span class="nt">-R</span> <span class="k">*</span></code></pre>
+</figure>
+
+<p>Change all files to 644 access:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-exec</span> <span class="nb">chmod </span>644 <span class="o">{}</span> <span class="se">\;</span></code></pre>
+</figure>
+
+<p>Change all directories to 755 access:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> d <span class="nt">-exec</span> <span class="nb">chmod </span>755 <span class="o">{}</span> <span class="se">\;</span></code></pre>
+</figure>
+
+
+            <!-- 
               <p>Whenever I’m uploading something through FTP software, the file permissions usually mess up. Three quick commands to clean up the WordPress installation below.
 
 </p>
-            
-          </section> -->
+             -->
+          </section>
         </div>
       </article>
     
@@ -765,13 +786,51 @@ pre {
             <h2 class="post-title" itemprop="name"><a href="/2015/11/23/apple_pinned_tab.html" itemprop="url">How to create a Safari Pinned Tab (SVG) for your website</a></h2>
           </header>
           
-          <!-- <section class="post-content post-excerpt" itemprop="description">
-            
+          <section class="post-content post-excerpt" itemprop="description">
+            <p>With the new feature in Safari allows you to drag tabs to the left to create permanent tabs for those websites. This post shows you how to create your own pinned tab SVG image. Start by adding link tag to the <code class="highlighter-rouge">&lt;head&gt;</code> section of your site.</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"mask-icon"</span> <span class="na">href=</span><span class="s">"website_icon.svg"</span> <span class="na">color=</span><span class="s">"red"</span><span class="nt">&gt;</span></code></pre>
+</figure>
+
+<amp-img width="450px" height="61px" src="http://i.imgur.com/PxcsQeg.gif" alt="safari pinned tab"></amp-img>
+
+<p>Next hit <code class="highlighter-rouge">Shift + Command + G</code> in the finder and paste in the following URL:</p>
+
+<blockquote>
+  <p>~/Library/Safari/Template Icons</p>
+</blockquote>
+
+<p>Keep this open as this is the cache for Safari’s icons. If you think it doesn’t update after you’ve made changes, delete the contents in this folder and restart Safari.</p>
+
+<p>According to the official documents for <a href="https://developer.apple.com/library/prerelease/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html#//apple_ref/doc/uid/TP40014305-CH9-SW20">icons on pinned tabs</a>, we need an SVG image with a transparent background and 100% black for all vectors. With the color attribute from the “mask-icon” on top we can change the hover-over color for the icon. There can only be 1 color so choose wisely. In my case I chose a pink color.</p>
+
+<p>If you have an existing favicon/logo, you can use <a href="http://vectormagic.com/">http://vectormagic.com/</a> to turn it into a SVG file. It will replace your bitmap with vectors which you then can either edit yourself or inside their website. So I went ahead and created a SVG from my website <a href="http://mashnieuws.nl">Mashnieuws.nl</a>. It is the shape of a flower, which is easy to work with. Then you can use apps like Illustrator (paid) or Inkscape (free) to trace lines in the image and turn everything to the color black, which will act as the area for the color hover effect. Be sure that there is only 1 color in the document, black, and no background color. Not even white. The rest has to be transparent.</p>
+
+<p>Below is the result for my tracing lines for the flower. As you will see, the black will turn into pink. Keep in mind that the icon in the tab is small, so don’t care about small details. Aim for something recognizable.</p>
+
+<amp-img width="300px" height="150px" src="http://i.imgur.com/MTJmpWS.png" alt="mashnieuws pinned tab"></amp-img>
+
+<p>Then I adjusted the previously mentioned mask-icon link to the correct color #cc0066 and name:</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"mask-icon"</span> <span class="na">href=</span><span class="s">"mashnieuws.svg"</span> <span class="na">color=</span><span class="s">"#cc0066"</span><span class="nt">&gt;</span></code></pre>
+</figure>
+
+<p>So the end result is that it works immediately, as seen in the GIF below. I also created a SVG for my blog, but as it’s an image of a bear, it doesn’t come out so well.</p>
+
+<amp-img width="450px" height="61px" src="http://i.imgur.com/gy2IhhV.gif" alt="pinned safari bear in action"></amp-img>
+
+<p>Clear Safari’s cache and restart the app if you’ve made adjustments.</p>
+
+<p>Easy method that only takes about half an hour and it will further enrich your user experience, even if it’s just for a few people.</p>
+
+            <!-- 
               <p>With the new feature in Safari allows you to drag tabs to the left to create permanent tabs for those websites. This post shows you how to create your own pinned tab SVG image. Start by adding link tag to the &lt;head&gt; section of your site.
 
 </p>
-            
-          </section> -->
+             -->
+          </section>
         </div>
       </article>
     
@@ -785,12 +844,14 @@ pre {
             <h2 class="post-title" itemprop="name"><a href="http://www.ronreiter.com/free-parking-for-life" itemprop="url">Free parking for life! &ogt;</a></h2>
           </header>
           
-          <!-- <section class="post-content post-excerpt" itemprop="description">
+          <section class="post-content post-excerpt" itemprop="description">
             
+
+            <!-- 
               <p>
 </p>
-            
-          </section> -->
+             -->
+          </section>
         </div>
       </article>
     
@@ -804,13 +865,23 @@ pre {
             <h2 class="post-title" itemprop="name"><a href="/2013/11/02/chillout.html" itemprop="url">Chillout music</a></h2>
           </header>
           
-          <!-- <section class="post-content post-excerpt" itemprop="description">
-            
+          <section class="post-content post-excerpt" itemprop="description">
+            <p>Highly recommended background music while working.</p>
+
+<amp-youtube width="560" height="315" layout="responsive" data-videoid="Z8Y1MalRrDc">
+</amp-youtube>
+
+<p><br /></p>
+
+<amp-youtube width="560" height="315" layout="responsive" data-videoid="lh4brL7PC2E">
+</amp-youtube>
+
+            <!-- 
               <p>Highly recommended background music while working.
 
 </p>
-            
-          </section> -->
+             -->
+          </section>
         </div>
       </article>
     
