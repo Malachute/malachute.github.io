@@ -1,11 +1,8 @@
-# Amplify for Jekyll
+# Jekyll based static blog
 
 Homepage for markhagethorn.com
 
-[Check requirements & documentation of Jekyll.](https://jekyllrb.com/docs/installation/)
-
-Install Jekyll:
-`sudo apt install jekyll`
+[Check requirements & documentation of Jekyll.](https://jekyllrb.com/docs/installation/macos/)
 
 To serve:
 `bundle exec jekyll serve`
